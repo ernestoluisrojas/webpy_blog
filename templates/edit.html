@@ -1,0 +1,14 @@
+$def with (post, form)
+
+<h1>Edit</h1>
+<p><a href="/welcome">Back to post</a></p>
+
+<form action="" method="post">
+$:form.render()
+</form>
+
+
+<h2>Delete post</h2>
+<form action="/delete/$post.id" method="post">
+    <input type="submit" value="Delete post"/>
+</form>

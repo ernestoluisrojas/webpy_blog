@@ -1,0 +1,17 @@
+$def with (user_error, pwd_error, email_error)
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Title</title>
+</head>
+<body>
+	<h1>Signup</h1>
+	<form name="input" method="post">
+	Username: <input type="text" name="username">$user_error<br>
+	Password: <input type="password" name="pwd"><br>
+	Verify Password: <input type="password" name="verypwd">$pwd_error<br>
+	Email: <input type="text" name="email">$email_error<br>
+	<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
